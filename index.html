@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Landing Page</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        function Nav(){
+            return <div style={{display:'flex',lineHeight:'7px',justifyContent:'space-around',alignItems:'center'}}>
+                <section><h2>Flex Business Pro</h2><span>Clean and Modern Business Theme</span></section>
+                <section>
+                    <a href='#' style={{textDecoration:'none',color:'black',marginRight:'20px'}}>Home</a>
+                    <a href='#' style={{textDecoration:'none',color:'black',marginRight:'20px'}}>About Us</a>
+                    <a href='#' style={{textDecoration:'none',color:'black',marginRight:'20px'}}>Styleguide</a>
+                    <a href='#' style={{textDecoration:'none',color:'black',marginRight:'20px'}}>Blog</a>
+                    <a href='#' style={{textDecoration:'none',color:'black',marginRight:'20px'}}>Contact US</a>
+                </section>
+                </div>
+        }
+        function More(){
+            return <div style={{textAlign:'center',color:'white',padding:'100px'}}>
+                <img src='https://cdn.pixabay.com/photo/2015/01/08/18/25/desk-593327__340.jpg' width='100%' height='400px' style={{position:'absolute',left: '0px', top: '70px',zIndex:'-1',opacity:'0.9'}}/>
+                <h1>Your Awesome Business Theme</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, itaque.<br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, ut?</p>
+                <button style={{backgroundColor:'blue',border:'none',color:'white',height:'40px', borderRadius:'20px',cursor:'pointer',width:'100px'}}>Read More</button>
+                </div>
+        }
+        function Features(){
+            return<div style={{marginTop:'45px',display:'flex',flexDirection:'column'}}>
+                <div>
+                <h2 style={{textAlign:'center'}}>Our Features</h2>
+                </div>
+                <div style={{display:'flex',justifyContent:'space-around',textAlign:'center'}}>
+                <div>
+                    <h4><i class="fa-solid fa-tv"></i></h4>
+                <h4>Fully Responsive</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, temporibus.</p>
+                <a href='#'>Read More</a>
+                </div>
+                <div>
+                    <h4><i class="fa-solid fa-user"></i></h4>
+                <h4>Trusted Author</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, temporibus.</p>
+                <a href='#'>Read More</a>   
+                </div>
+                <div>
+                    <h4><i class="fa-sharp fa-solid fa-recycle"></i></h4>
+                <h4>Reusable Elements</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, temporibus.</p>
+                <a href='#'>Read More</a>
+                </div>
+                </div>
+                </div>
+
+        }
+        function Card(){
+            return<div style={{display:'flex',justifyContent:'space-evenly',color:'white',marginTop:'45px',textAlign:'center'}}>
+                <img src='https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg'  width='100%' height='180px' style={{position:'absolute',left: '0px', top: '745px',zIndex:'-1',opacity:'0.9'}}/>
+                <div>
+                    <i class="fa-solid fa-trophy fa-2xl"></i>
+                    <h1>22</h1>
+                    <p>Awards Winning</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-briefcase fa-2xl"></i>
+                    <h1>145</h1>
+                    <p>Finished Projects</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-car fa-2xl"></i>
+                    <h1>349</h1>
+                    <p>Products Sold</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-twitter fa-2xl"></i>
+                    <h1>2456</h1>
+                    <p>Twitter Fans</p>
+                </div>
+                </div>
+
+        }
+        function Footer(){
+            return<div style={{display:'flex',justifyContent:'space-around', backgroundColor:'black',color:'white',marginTop:'33px', width:'100%'}}>
+                <div style={{width:'120px'}}>
+                    <h4>ABOUT FLEX BUSINESS PRO</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt porro natus animi dolores non aut suscipit labore fugiat</p>
+                </div>
+                <div>
+                    <h4>RECENT POSTS</h4>
+                    <p>Fly To London</p>
+                    <span>September 18,2018</span>
+                    <p>Stair Communication</p>
+                    <span>September 18,2018</span>
+                    <p>Do you want to be a robot</p>
+                    <span>September 18,2018</span>
+                </div>
+                <div style={{display:'flex',flexDirection:'column',gap:'3px'}}>
+                    <div><h4>GALLERIES</h4></div>
+                    <div>
+                    <img src="https://blog.hubspot.com/hs-fs/hubfs/professional-background-bio.jpeg?width=595&height=400&name=professional-background-bio.jpeg" alt="pic" height='50px' width='50px'/>
+                    <img src="https://wallpaperaccess.com/full/1393189.jpg" alt="pic1" height='50px' width='50px'/>
+                    <img src="https://wallpaperaccess.com/full/1393196.jpg" alt="pic2" height='50px' width='50px'/>
+                    <img src="https://wallpaperaccess.com/full/1393207.jpg" alt="pic3" height='50px' width='50px'/><br/>
+                    <img src="https://wallpaperaccess.com/full/1393269.jpg" alt="pic4" height='50px' width='50px'/>
+                    <img src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=600" alt="pic5" height='50px' width='50px'/>
+                    <img src="https://images.pexels.com/photos/844297/pexels-photo-844297.jpeg?auto=compress&cs=tinysrgb&w=600" alt="pic6" height='50px' width='50px'/>
+                    <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&w=600" alt="pic7" height='50px' width='50px'/>
+                    </div>
+                </div>
+                </div>
+
+        }
+        function Container(){
+            return <div>
+                <Nav/>
+                <More/>
+                <Features/>
+                <Card/>
+                <Footer/>
+                </div>
+        }
+        ReactDOM.render(<Container/>,document.getElementById('root'))
+    </script>
+</body>
+</html>
